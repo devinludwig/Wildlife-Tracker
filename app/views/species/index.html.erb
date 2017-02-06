@@ -1,0 +1,10 @@
+<div class = "container">
+  <h1>Species</h1>
+  <ul>
+    <% @species.each do |species| %>
+      <li><%= link_to species.name, species_path(species) %></li>
+    <% end %>
+  </ul>
+
+  <button type="button" class="btn btn-warning"><%= link_to "New Species", new_species_path %></button>
+</div>

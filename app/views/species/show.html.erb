@@ -1,0 +1,6 @@
+
+<h1><%= @species.name %></h1>
+
+<p><%= link_to "Return to Species", species_index_path %> </p>
+<p><%= link_to "Edit", edit_species_path(@species) %></p>
+<p><%= link_to "Delete Species", species_path(@species), :data => {:confirm => "are you sure", :method => "delete"} %>
